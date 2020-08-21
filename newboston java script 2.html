@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+<title>
+	OBJECTS
+	
+</title>
+
+ <script type = "text/javascript">
+
+ 
+/*CREATING OUR OWN OBJECTS 
+
+ITS MUST BE DONE HEAD ATTRIBUTE*/
+
+
+//BY CONSTRUCTOR FUNCTION
+
+   function person(name,rollno,year){
+      
+      this.name = name;                    //BLUEPRINT FOR MAKING OBJECTS
+      this.rollno = rollno;
+      this.year = year;
+      this.yearstograduate = yearsleft;
+      }
+
+
+      function yearsleft(){
+      	   var numyears = 4 - this.year;
+      	   return numyears;
+      }
+
+      var vishnu = new person("linga","18MM8038",2);   //MAKING OBJECTS
+
+      /* we can make so omany objects with constructor function  by using blueprint */
+
+
+//BY OBJECT INTIALIAZERS
+
+   var laddu = {name:"laddu", age: "19"};
+
+   /* we can make only 2 to three objects */
+
+
+</script>
+</head>
+
+
+
+
+<body>	
+<script type= "text/javascript">
+	
+
+
+//OBJECTS
+
+var linga = "lets start ";
+document.write(linga.length+"</br>");// length is a inbult property
+
+//object.methods(functions)     DOT can useful to acceses proprties            <--
+//object.properties(variables)  and methods , document.write() is a example of   ||
+
+
+document.write(vishnu.rollno+"</br>");
+document.write(vishnu.yearstograduate()+"</br>");
+document.write(laddu.age+"</br>");
+
+
+
+
+//ARRAYS
+
+var human = new Array("religion","race","country","language");  //remeber: new Array(); not new Array{}; 
+document.write(human[3]+"</br>");
+
+
+var things = new Array();
+things[0]="yes";
+things[1]="abhi";
+document.write(things[1]+"</br>");
+
+
+
+//ARRAYS METHODS AND PROPERTIES
+
+ document.write(human.length+"</br>");
+
+ var world = human.concat(things);
+ document.write(world[5]+"</br>");
+
+  //JOIN AND POP METHODS FOR ARRAY
+  
+  //JOIN METHOD CONVERTS arrays TO strings
+
+   var string1 = human.join("-");  //parameters shows up between strings
+    document.write(string1+"</br>");
+    document.write(things+"</br>"); //doubt
+
+  //POP METHOD ELMINATES LAST ELEMENT OF ARRAY 
+     world.pop();
+     document.write(world[5]+"</br>");
+
+  //PUSH METHOD ADD ELEMEMTS TO ARRAY
+    world.push("plants","animals");
+    document.write(world[5]+"</br>");
+
+  //REVERSE METHOD "u know what its gonna do"
+    world.reverse();
+    document.write(world+"</br>"); //important
+ 
+  //SORT METHOD
+   human.sort();
+   string2 = human.join()
+   document.write(string2+"</br>");
+
+   //PROMPT METHOD AND ADDING ELEMENTS THROUGH LOOP
+   var adding = new Array(3);
+
+   for(i=0;i<3;i++){
+   	 adding[i] = prompt("Enter the elements","enter text here"); //prompt takes input and assigns it to variable
+   }
+
+   document.write(adding[2]+"</br>");
+
+   //PRINTING ARRAYS IN COOL WAY??
+
+   adding.sort();
+   for(i=0;i<adding.length;i++){
+   	 document.write(adding[i]+"</br>");
+   }
+
+
+   //ASSOCIATIVE ARRAYS
+   //basically arrays which have index STRINGS instead of index NUMBERS
+
+   var yummy = new Array();
+   yummy["dish"] = "butter chicken";
+   yummy["drink"] = "cococola";
+
+   document.write(yummy["dish"]+"</br>");
+
+
+
+
+
+   //MATH OBJECTa nd its properties
+   //math properties like Math.PI and Math.E shows the values of pi and eulers number.
+
+   var squareroot = prompt("enter a number to squarerooted","");
+    var sol = Math.sqrt(squareroot);
+
+    document.write("squarerooted number is"+sol+"</br>");
+
+
+
+
+    //DATE OBJECTS AND SET INTERVAL FUNCTION
+
+     function printingtime(){
+     	  var now = new Date();
+     	  var hours = now.getHours();
+     	  var minutes = now.getMinutes();
+          var seconds = now.getSeconds();
+          document.write(hours+"-"+minutes+"-"+seconds+"</br>");
+     }
+
+     setInterval("printingtime()",1000);
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BASIC</title>
+</head>
+<body>
+
+<script>
+
+
+    //COMMMENTS
+
+	//THIS IS THE WAY TO COMMENT A SINGLE LINE
+
+	/* THIS IS THE WAY TO COMMENT 
+	MULTIPLE LINES
+	*/
+	document.write("i'm back"+"</br>");
+
+
+	//VARIABLES
+
+	var x = 69;
+	document.write(x+"</br>");
+
+	/*variables only contains underscore,numbers,lettes
+	  variables cannot start with numbers
+	  variables are senstive ex: x==X
+
+	*/
+
+
+    //DIFFERENT OF TYPE OF VARIABLES
+    var age = 20.34;
+    var sleep = -23;
+    var c ="i didnt know how to go \"to nextline\"";
+
+    document.write(age,sleep,c+"</br>");
+
+    document.write("</br>");
+
+    document.write(age+c+sleep+" we can add something here"+"</br>");
+
+
+    //FUNCTION
+
+    function java(x)
+    {
+    	alert(x);//alert is for popup
+    }
+
+    function parameters(x,y,z){
+    	alert("prakriti"+x+y+z);
+    }
+
+    parameters("team",60,"memebers");
+    parameters("team leaders",15,"memebers");
+
+
+
+    //RETURN STATEMENT
+
+    function roturn(a,b){
+    	c = a+b;
+    	return c;
+
+    }
+
+    document.write(roturn(12,20)+"</br>");
+
+  
+
+   function start(){
+    dofirst();
+    dosecond();
+   }
+
+   function dofirst(){
+   	document.write("im first bro"+"</br>");
+   }
+
+   function dosecond(){
+   	document.write("im satisfied with two"+"</br>");
+   }
+
+   start();
+
+
+   //MATH OPERATORS
+
+   var value = 20+33.2-1+20/3;
+   document.write(value+"</br>");
+   value--;
+   document.write(value+"</br>");
+
+
+
+
+   //IF ELSE (else gives a second option)
+
+   var bananas = 12;
+   var eggroll = 1;
+   var chickensandwich=34;
+
+   if(bananas!=eggroll&& chickensandwich>eggroll){
+   	  if(chickensandwich>bananas){
+   	document.write("its works, go and check ur code if u have doubt"+"</br>");}
+   }
+   else{
+   	document.write("i know its not gonna work"+"</br>");
+   }
+
+
+
+   //SWITCH(to many condtions)
+
+   var l = "yes";
+
+   switch(l){
+   	case "no":
+   	document.write("useless");
+   	break;
+   	case "na":
+   	document.write("useless");
+   	break;
+   	case "na":
+   	document.write("useless");
+   	break;
+   	default:
+   	document.write("its not gonna pass above tests"+"</br>");
+   }
+
+  
+
+  //FORLOOP (do a thing for several times)
+
+  for(i=0;i<3;i++){
+  	document.write("this sentence gonna repeat 3 times"+i+"time"+"</br>");
+
+  }
+
+
+
+    //WHILE LOOP
+
+  var g = 1;
+
+    while(g<3){
+    	document.write("i am splitted form of forloop"+g+"time"+"</br>");
+    	g++;
+    }
+
+
+
+    //DO WHILE (to run the code atleast once)
+
+    var t=35;
+
+    do{
+    	document.write("dont worry i only appears once ,because while condtion is false"+"</br>");
+    }while(t>36);
+
+
+
+
+   //EVENT HANDLERS
+
+   /*
+    EVENT HANDLERS (FUNCTIONS)ARE JUST LIKE SCRIPT,WE CAN ADD THEM WHERE WE WANT LIKE body,forms etc.
+
+    some event handlers are:
+    onMouseover
+    onMouseout
+    onLoad
+    onUnload 
+   */
+
+</script>
+
+<form >
+
+	<input type="button" value="click me" onclick="java('event handler same as script');dofirst();"> <!--  on click is event handeler, its represents java script in html-->
+	
+</form>
+
+</body>
+</html>

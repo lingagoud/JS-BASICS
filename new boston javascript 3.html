@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORMS</title>
+
+     <script type="text/javascript">
+          function validator(){
+               if( document.notagoogleform.box.checked){
+                   
+                                        alert("kk");}
+
+               else{alert("check the checkbox ")}; 
+               }
+          
+         
+          
+
+     </script>
+
+
+
+</head>
+<body>
+<form name="notagoogleform">
+    Username : <input type="text" name="Username" /></br>
+    password : <input type="password" name="password" /></br>
+    <input type="checkbox" name="box" ></br>
+    <input type="submit" value="submit" onclick="validator()">
+
+</form>
+<script type="text/javascript"> 
+
+     var x = document.forms[0].length;  //we can acces forms like arrrays ,0 for firstform respectivly
+     document.write(x+"elements"+"</br>");
+
+      var y = document.forms[0].elements[0].name;
+      document.write(y+"=");
+	
+
+     //ACCESSING FORMS BY NAME
+      var z = document.notagoogleform.Username.name;
+      document.write(z);
+
+
+	 
+</script>
+
+
+</body>
+</html>
